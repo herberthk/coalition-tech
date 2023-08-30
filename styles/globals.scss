@@ -130,17 +130,6 @@ body {
  }
 }
 
-/* The dots/bullets/indicators */
-.slide-indicator {
-  cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  transition: background-color 0.6s ease;
-}
-
 .slide-image {
   width: 55%;
   height: 260px;
@@ -176,7 +165,7 @@ body {
 
 /* Position the "next button" to the right */
 .next {
-  right: 23px;
+  right: 10px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -262,4 +251,30 @@ body {
 
 .itemBtnExpanded .chevron {
   transform: rotate(180deg);
+}
+
+ /* position of indicator container */
+ .Indicators {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.Indicator {
+  width: 12px;
+  height: 12px;
+  background: #fcfcfc;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.Indicator-highlight {
+  top: -1px;
+  left: -1px;
+  background: #09f;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  position: absolute;
 }

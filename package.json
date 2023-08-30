@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@popmotion/popcorn": "^0.4.4",
     "@szhsin/react-accordion": "^1.2.3",
     "bootstrap": "^5.3.1",
     "classnames": "^2.3.2",

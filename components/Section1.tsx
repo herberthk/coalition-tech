@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
-import { slideIn } from "@/utils/motion";
-
 const Section1 = (): React.ReactNode => {
   return (
     <section className="section-1 d-flex flex-column" id="section-1">
@@ -44,13 +42,17 @@ const Section1 = (): React.ReactNode => {
         </nav>
         <div className="ms-5 big-text-container">
           <motion.p
-            variants={slideIn("right", "tween", 0, 1)}
+            initial={{ x: "-200%" }}
+            animate={{ x: 0 }}
+            transition={{ ease: "linear", duration: 2, x: { duration: 1 } }}
             className="text-uppercase text-large"
           >
             Losangeles
           </motion.p>
           <motion.p
-            variants={slideIn("left", "tween", 0, 1)}
+            initial={{ x: "200%" }}
+            animate={{ x: 0 }}
+            transition={{ ease: "linear", duration: 2, x: { duration: 1 } }}
             className="text-uppercase text-large dark-blue"
           >
             Mountains
